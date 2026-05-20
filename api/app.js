@@ -68,10 +68,14 @@ app.get(
 app.use(errorHandler);
 
 // SERVER
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
+if(false){
 app.listen(PORT, function () {
   console.log(
     `Server is running on port ${PORT}`
   );
-});
+})
+}
+
+module.exports = app;
